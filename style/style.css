@@ -58,7 +58,7 @@
 /* navbar */
 #nav {
     position: absolute;
-    top: 1%;
+    top: 2%;
     left: 75%;
     list-style-type: none;
     cursor: pointer;
@@ -314,21 +314,26 @@
 }
 
 .download-button {
-    position: relative;
     background-color: #A0A083;
-    text-decoration: none;
-    text-align: center;
     border : 1.6px solid white;
     border-radius: 17px;
     opacity: 1;
     z-index: 25;
     transition: 0.4s;
     cursor: pointer;
-    top: 5%;
-    left: 38%;
-    width: 125px;
-    padding: 10px 10px;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    width: 190px;
+    height: 45px;
+}
+
+.download-button a {
     color: white;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px;
 }
   
 .download-button:hover {
@@ -338,10 +343,11 @@
 
 /* social media */
 .social-media {
-    position: relative;
+    position: absolute;
     left: 50%;
-    bottom: 63%;
+    top: 35%;
     margin-top: 95px;
+    z-index: 30;
 }
 
 .social-icon {

@@ -35,12 +35,16 @@ document.addEventListener("keydown", function(event) {
 document.querySelector(".about").style.display = "none";
 document.querySelector(".background").style.display = "none";
 document.querySelector(".drop").style.display = "none";
+document.querySelector(".download-button").style.display = "none";
+document.querySelector(".social-media").style.display = "none";
 document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         document.getElementById("disappear").style.display = "none";
         document.querySelector(".drop").style.display = "block";
         document.querySelector(".background").style.display = "block";
         document.querySelector(".about").style.display = "block";
+        document.querySelector(".download-button").style.display = "block";
+        document.querySelector(".social-media").style.display = "block";
     }
 });
 
