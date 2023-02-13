@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/Logo/logo.png">
+    <title>My_PortFolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<header>
+    <!-- Animate title -->
+    <div class="title">My_PortFolio</div>
+    <div class="continue" id="disappear">Press enter to continue</div>
+
+    <!-- navbar -->
+    <ul id="nav">
+        <li class="dropdown">
+            <div class="drop">Projects</div>
+            <div class="dropdown-content">
+                <a id="python">Python</a>
+                <a id="language-C">C</a>
+            </div>
+        </li>
+    </ul>
+</header>
+
+<body id="core">
+    <!-- animate background -->
+    <div class="background">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+    </div>
+
+    <!-- About -->
+    <div class="about">
+        <h1>CAROLIN Hugo</h1>
+        <div class="text2">
+            <p>To avoid any cheating within the school, the link to the various projects will not be published.</p>
+        </div>
+        <div class="text">
+            <p>I am passionate about IT in general and I like to discover new technologies.
+                In addition, I am a 1st year developer at Epitech, which shows my commitment to the field of technology and to my career.
+                I am curious and determined, always looking for new knowledge and opportunities in the technology industry.
+            </p>
+        </div>
+        <a href="Download/CV_CAROLIN_Hugo.pdf" download class="download-button">Download Resume/CV</a>
+        <div class="social-media">
+            <div class="social-icon linkedin">
+                <a id="linkedin">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/hugo-carolin-627628256/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="social-icon github">
+                <a id="github">GitHub</a>
+                <a href="https://github.com/CarolinHugo">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
+            <div class="social-icon gmail">
+                <a id="mail">hugo.carolin@epitech.eu</a>
+                <i class="fa fa-envelope"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- choose module -->
+    <div class="container-button">
+        <button class="button" id="b1">Graphical Programming</button>
+        <button class="button" id="b2">Elementary Programming</button>
+        <button class="button" id="b3">Unix System Programming</button>
+    </div>
+
+    <!-- card for Graphical Programming -->
+    <div class="container-card-gp">
+        <div class="card-gp">
+            <img src="img/Graphical Programming/my_hunter.png" width="100%" height="45%">
+            <h2>My_Hunter : The Duck Hunt legacy</h2>
+            <p>In this project, you are asked to make a small video game based on the rules of Duck Hunt. 
+                The player is a hunter who shoots ducks. The player can click on them to shoot them.
+            </p>
+        </div>
+        <div class="card-gp">
+            <img src="img/Graphical Programming/my_radar.png" width="100%" height="45%">
+            <h2>My_Radar : The air traffic control panel</h2>
+            <p>In this project, you are asked to render a 2D visualization panel showing a simulatation of air traffic (AT).
+                You have to consider 2 types of entity : Control Tower and Aircrafts.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- card for Elementary Programming -->
+    <div class="container-card-ep">
+        <div class="card-ep">
+            <img src="img/Elementary Programming/antman.png" width="100%" height="45%">
+            <h2>Antman : Itsy Bitsy Bytes</h2>
+            <p>The goal of this project is to compress data. You will write two programs.
+                The first one will take a file as input and compress it.
+                The second one will take a compressed file as input and translate it back to its original state.
+            </p>
+        </div>
+        <div class="card-ep">
+            <img src="img/Elementary Programming/pushswap.png" width="100%" height="45%">
+            <h2>Push Swap : Fancy List Sorting</h2>
+            <p>The game is made up of two lists of numbers named l_a and l_b.
+                In the beginning, l_b will be empty and l_a will contain a certain amount of positive or negative numbers.
+                The objective of the game is to sort l_a.
+            </p>
+        </div>
+        <div class="card-ep">
+            <img src="img/Elementary Programming/bsq.png" width="100%" height="45%">
+            <h2>BSQ : Find the biggest square</h2>
+            <p>You must find the largest possible square on a board while avoiding obstacles.
+                The board can be generated two ways. The first one is by reading a file passed as the program's argument.
+            The file is represented by "." and "o".
+        </p>
+        </div>
+    </div>
+
+    <!-- card for Unix System Programming -->
+    <div class="container-card-usp">
+        <div class="card-usp">
+            <img src="img/Unix System Programming/my_ls.png" width="100%" height="45%">
+            <h2>My_LS : Listing command-like</h2>
+            <p>You must recode the ls [-alRdrt] [FILE] command.
+                This fonction have many different option like : ls -a, ls -l, ls -t, ls -R,... 
+                All of these options are different so you have to understand them
+            </p>
+        </div>
+        <div class="card-usp">
+            <img src="img/Unix System Programming/my_sokoban.jpg" width="100%" height="45%">
+            <h2>My_Sokoban : An arcade game</h2>
+            <p>Develop a copy of this game in terminal mode.
+                If all boxes are on storage locations, the player wins.
+                Otherwise, if none of the boxes can be moved anymore, he loses.
+            </p>
+        </div>
+        <div class="card-usp">
+            <img src="img/Unix System Programming/my_navy.jpg" width="100%" height="45%">
+            <h2>My_Navy : You sunk my battleship!</h2>
+            <p>You all know the very famous Battleship game.
+                You must code a terminal version of this game.
+                The two players are ONLY allowed to comunicate using the
+                signals.
+            </p>
+        </div>
+    </div>
+
+    <!-- card for python -->
+    <div class="container-card">
+        <div class="card">
+            <img src="img/Mathematics/101-pong.jpg" width="100%" height="45%">
+            <h2>101-Pong : Vectors and Video Games</h2>
+            <p>Pong, an arcade game developped in 1972 by Ralph Baer (Atari), is the first ever successful video game.
+                The goal of this project is to work on a 3D version of this game.
+            </p>
+        </div>
+        <div class="card">
+            <img src="img/Mathematics/102-architect.png" width="100%" height="45%">
+            <h2>102-Architect : Home planning</h2>
+            <p>You are working on a homeplanning software for an architecture firm. 
+                The goal is to simplify the plan, You are in charge of implementing the geometric transformations.
+            </p>
+        </div>
+        <div class="card">
+            <img src="img/Mathematics/103-cipher.png" width="100%" height="45%">
+            <h2>103-Cipher : Multiplying Matrices</h2>
+            <p>Cryptography is a very old science, whose goal is to secure communication, so that only its recipient could
+                read it. Method : encrypt -> key -> decrypt.
+            </p>
+        </div>
+        <div class="card">
+            <img src="img/Mathematics/104-intersection.png" width="100%" height="45%">
+            <h2>104-Intersection : Third dimension</h2>
+            <p>To create synthesis images (ray tracing), potential intersection points between
+                light rays and scene objects (here cylinders, spheres and cones) must be computed.
+            </p>
+        </div>
+        <div class="card">
+            <img src="img/Mathematics/105-torus.png" width="100%" height="45%">
+            <h2>105-Torus : Mathematics Donut</h2>
+            <p>This project is the continuation of the previous one, and should allow you to draw
+                more complex forms, such as a torus (4th degrees equation and 3 algorithms).
+            </p>
+        </div>
+    </div>
+      
+</body>
+
+<script type="text/javascript" src="JavaScript/script.js"></script>
+
+</html>

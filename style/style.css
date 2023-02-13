@@ -1,0 +1,367 @@
+/* My_portfolio: title*/
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -70px;
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* Press enter*/
+.continue {
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    animation-name: flash;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes flash {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* navbar */
+#nav {
+    position: absolute;
+    left: 75%;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.drop {
+    color: white;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+/* dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+  /* dropdow content hidden */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 120px;
+    z-index: 1;
+}
+  
+  /* differents categories */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* python cards */
+.container-card {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+.card {
+    width: 300px;
+    height: 500px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 23px;
+}
+.card h2 {
+    margin: 20px;
+}
+
+.card img {
+    border-radius: 9px 9px 0px 0px;
+}
+
+.card p {
+    margin: 20px;
+    font-size: 14px;
+}
+
+/* Graphical Programming card */
+.container-card-gp {
+    position: absolute;
+    top: 25%;
+    left: 32%;
+}
+
+.card-gp {
+    width: 300px;
+    height: 500px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 23px;
+}
+
+.card-gp img {
+    border-radius: 9px 9px 0px 0px;
+}
+
+.card-gp h2 {
+    margin: 20px;
+}
+
+.card-gp p {
+    margin: 20px;
+    font-size: 14px;
+}
+
+/* Elementary Programming card */
+.container-card-ep {
+    position: absolute;
+    top: 25%;
+    left: 22%;
+}
+
+.card-ep {
+    width: 300px;
+    height: 500px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 23px;
+}
+
+.card-ep img {
+    border-radius: 9px 9px 0px 0px;
+}
+
+.card-ep h2 {
+    margin: 20px;
+}
+
+.card-ep p {
+    margin: 20px;
+    font-size: 14px;
+}
+
+/* Unix System Programming card */
+.container-card-usp {
+    position: absolute;
+    top: 25%;
+    left: 22%;
+}
+
+.card-usp {
+    width: 300px;
+    height: 500px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 23px;
+}
+
+.card-usp img {
+    border-radius: 9px 9px 0px 0px;
+}
+
+.card-usp h2 {
+    margin: 20px;
+}
+
+.card-usp p {
+    margin: 20px;
+    font-size: 14px;
+}
+
+/* background move */
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #f13a8f 50%, #09f 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+  
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+  
+.bg3 {
+    animation-duration: 5s;
+}
+   
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+/* choose module */
+.container-button {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+}
+
+.button {
+    width: 200px;
+    height: 75px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 23px;
+}
+
+/* About */
+.about {
+    border-radius: 15px;
+    background-color: #C89FA3;
+    width: 750px;
+    height: 450px;
+    box-shadow: 10px 10px 10px 0px white;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+
+.about h1 {
+    position: relative;
+    margin-left: 50px;
+    animation: move-text 2s ease-out forwards;
+}
+
+@keyframes move-text {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.about p {
+    margin-left: 50px;
+    position: relative;
+    animation: move-text-bottom 2s ease-out forwards;
+}
+
+@keyframes move-text-bottom {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0%;
+    }
+}
+
+/* div in about */
+.text {
+    width: 290px;
+    position: relative;
+    left: 2%;
+}
+
+.download-button {
+    position: relative;
+    background-color: #A0A083;
+    text-decoration: none;
+    text-align: center;
+    border : 1.6px solid white;
+    border-radius: 17px;
+    opacity: 1;
+    z-index: 25;
+    transition: 0.4s;
+    cursor: pointer;
+    top: 25px;
+    left: 285px;
+    width: 125px;
+    padding: 10px 10px;
+    color: white;
+}
+  
+.download-button:hover {
+    background: linear-gradient(60deg, #5ff281, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f);
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+}
+
+/* social media */
+.social-media {
+    position: relative;
+    left: 50%;
+    bottom: 63%;
+    margin-top: 95px;
+}
+
+.social-icon {
+    width: 50px;
+    margin-bottom: 30px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #B38CB4;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    transform: translateY(-150px);
+    transition: all 0.5s;
+}
+
+.social-icon:hover {
+    background: linear-gradient(60deg, #5ff281, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f);
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+}
+
+.social-icon a {
+    color: white;
+    text-decoration: none;
+}
+
+#mail {
+    position: absolute;
+    left: 65px;
+}
+
+#github {
+    position: absolute;
+    left: 65px;
+}
+
+#linkedin {
+    position: absolute;
+    left: 65px;
+}
+
+.text2 {
+    position: absolute;
+    top: 55%;
+    left: 44%;
+}
+
+.text2 p{
+    width: 300px;
+    height: auto;
+}
