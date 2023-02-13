@@ -102,6 +102,8 @@ toggleButton.addEventListener("click", function() {
         cusp.style.display = "none";
     });
     document.querySelector(".about").style.display = "none";
+    document.querySelector(".download-button").style.display = "none";
+    document.querySelector(".social-media").style.display = "none";
 })
 
 //switch c to python
@@ -120,6 +122,8 @@ toggleCardsButton.addEventListener("click", function() {
         cusp.style.display = "none";
     });
     document.querySelector(".about").style.display = "none";
+    document.querySelector(".download-button").style.display = "none";
+    document.querySelector(".social-media").style.display = "none";
 });
 
 //switch to title
@@ -142,6 +146,8 @@ div.addEventListener("click", function() {
         cusp.style.display = "none";
     });
     document.querySelector(".about").style.display = "block";
+    document.querySelector(".download-button").style.display = "block";
+    document.querySelector(".social-media").style.display = "block";
 })
 
 // Graphical Programming

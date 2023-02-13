@@ -318,7 +318,7 @@
     border : 1.6px solid white;
     border-radius: 17px;
     opacity: 1;
-    z-index: 25;
+    z-index: 45;
     transition: 0.4s;
     cursor: pointer;
     position: absolute;
@@ -333,7 +333,7 @@
     position: absolute;
     text-decoration: none;
     text-align: center;
-    padding: 10px 10px;
+    padding: 5% 5%;
 }
   
 .download-button:hover {
