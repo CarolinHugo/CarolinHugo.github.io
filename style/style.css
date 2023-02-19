@@ -61,6 +61,7 @@
     left: 75%;
     list-style-type: none;
     cursor: pointer;
+    z-index: 5;
     
 }
 
@@ -101,7 +102,7 @@
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-    display: block;/* Warning */
+    display: block;
     .warning {
         color: red;
         position: absolute;
@@ -128,119 +129,214 @@
         margin-top: -3%;
     }
 }
-
+    
 /* python cards */
 .container-card {
-    position: absolute;
-    top: 25%;
-    left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
 .card {
-    width: 300px;
+    flex-basis: calc(33.33% - 20px);
     height: 500px;
     background-color: lightgray;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    margin: 23px;
-}
-.card h2 {
-    margin: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
 }
 
 .card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
     border-radius: 9px 9px 0px 0px;
 }
 
-.card p {
-    margin: 20px;
-    font-size: 14px;
+.card h2 {
+    padding: 10px;
+    margin: 10px 0 5px 0;
+    font-size: 24px;
 }
+
+.card p {
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex-basis: calc(100% - 20px);
+        margin: 10px 0;
+    }
+}
+
 
 /* Graphical Programming card */
 .container-card-gp {
-    position: absolute;
-    top: 25%;
-    left: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .card-gp {
-    width: 300px;
+    flex-basis: calc(33.33% - 20px);
     height: 500px;
     background-color: lightgray;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    margin: 23px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-gp img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
     border-radius: 9px 9px 0px 0px;
 }
 
 .card-gp h2 {
-    margin: 20px;
+    padding: 10px;
+    margin: 10px 0 5px 0;
+    font-size: 24px;
 }
 
 .card-gp p {
-    margin: 20px;
-    font-size: 14px;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+    flex-grow: 1;
 }
 
 /* Elementary Programming card */
 .container-card-ep {
-    position: absolute;
-    top: 25%;
-    left: 22%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .card-ep {
-    width: 300px;
+    flex-basis: calc(33.33% - 20px);
     height: 500px;
     background-color: lightgray;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    margin: 23px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-ep img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
     border-radius: 9px 9px 0px 0px;
 }
 
 .card-ep h2 {
-    margin: 20px;
+    padding: 10px;
+    margin: 10px 0 5px 0;
+    font-size: 24px;
 }
 
 .card-ep p {
-    margin: 20px;
-    font-size: 14px;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+    flex-grow: 1;
 }
 
 /* Unix System Programming card */
 .container-card-usp {
-    position: absolute;
-    top: 25%;
-    left: 22%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .card-usp {
-    width: 300px;
+    flex-basis: calc(33.33% - 20px);
     height: 500px;
     background-color: lightgray;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    margin: 23px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-usp img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
     border-radius: 9px 9px 0px 0px;
 }
 
 .card-usp h2 {
-    margin: 20px;
+    padding: 10px;
+    margin: 10px 0 5px 0;
+    font-size: 24px;
 }
 
 .card-usp p {
-    margin: 20px;
-    font-size: 14px;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    font-size: 16px;
+    flex-grow: 1;
 }
 
 /* background move */
@@ -279,6 +375,7 @@
     position: absolute;
     top: 45%;
     left: 35%;
+    z-index: 5;
 }
 
 .button {
@@ -287,6 +384,7 @@
     height: auto;
     background-color: lightgray;
     border-radius: 10px;
+    padding: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     margin: 23px;
 }
@@ -301,6 +399,7 @@
     box-shadow: 10px 10px 10px 0px white;
     position: relative;
     margin: 10% 5%;
+    z-index: 5;
 }
 
 .about h1 {
@@ -362,6 +461,7 @@
     width: 80%;
     max-width: 190px;
     height: 45px;
+    z-index: 6;
 }
 
 .download-button a {
@@ -370,8 +470,25 @@
     text-decoration: none;
     text-align: center;
     padding: 5% 5%;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
-  
+
+@media (max-width: 768px) {
+    .download-button a {
+        font-size: 16px;
+        padding: 3% 7%;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-button a {
+        font-size: 14px;
+        padding: 2% 5%;
+    }
+}
+
 .download-button:hover {
     background: linear-gradient(60deg, #5ff281, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f);
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
