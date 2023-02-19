@@ -12,11 +12,27 @@ function AddLetter() {
     }
 }
 
-// move div in corner
+// move div in corner with enter
 const div = document.querySelector(".title");
 let interval;
 let count = 0;
 document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        interval = setInterval(move_div, 40);
+        function move_div() {
+            if (count === 4) {
+                clearInterval(interval)
+            } else {
+                div.style.top = div.offsetTop - 21 + "px";
+                div.style.left = div.offsetLeft - 38 + "px";
+                count++;
+            }
+        }
+    }
+});
+
+// move div in corner with touch
+document.addEventListener("touchstart", function(event) {
     if (event.key === "Enter") {
         interval = setInterval(move_div, 40);
         function move_div() {
