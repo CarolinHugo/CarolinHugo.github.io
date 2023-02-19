@@ -3,7 +3,7 @@ var title = document.querySelector('.title');
 var split_text = title.innerText.split('');
 title.innerHTML = '';
 i = 0
-setInterval(function(){AddLetter()}, 125)
+setInterval(function(){AddLetter()}, 70)
 
 function AddLetter() {
     if (i < split_text.length) {
@@ -23,8 +23,8 @@ document.addEventListener("keydown", function(event) {
             if (count === 4) {
                 clearInterval(interval)
             } else {
-                div.style.top = div.offsetTop - 102 + "px";
-                div.style.left = div.offsetLeft - 185 + "px";
+                div.style.top = (div.offsetTop - (div.offsetHeight * 1.5)) + "px";
+                div.style.left = (div.offsetLeft - (div.offsetWidth * 0.45)) + "px";
                 count++;
             }
         }
@@ -39,8 +39,8 @@ document.addEventListener("touchstart", function(event) {
             if (count === 4) {
                 clearInterval(interval)
             } else {
-                div.style.top = div.offsetTop - 102 + "px";
-                div.style.left = div.offsetLeft - 185 + "px";
+                div.style.top = (div.offsetTop - (div.offsetHeight * 1.5)) + "px";
+                div.style.left = (div.offsetLeft - (div.offsetWidth * 0.45)) + "px";
                 count++;
             }
         }
@@ -74,9 +74,17 @@ document.addEventListener("touchstart", function(event) {
     document.querySelector(".social-media").style.display = "block";
 });
 
-// change color
+// change color with enter
 document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
+        document.getElementById("core").style.backgroundColor = "black";
+        document.querySelector(".title").style.color = "white";
+    }
+});
+
+//change color with touch
+document.addEventListener("touchstart", function(event) {
+    if (event.type === "touchstart") {
         document.getElementById("core").style.backgroundColor = "black";
         document.querySelector(".title").style.color = "white";
     }

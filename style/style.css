@@ -28,7 +28,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-transform: uppercase;
     font-weight: 800;
     cursor: pointer;
@@ -37,14 +37,14 @@
 /* Press enter*/
 .continue {
     position: absolute;
-    top: 55%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     animation-name: flash;
     animation-duration: 0.9s;
     animation-iteration-count: infinite;
     cursor: pointer;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 @keyframes flash {
@@ -278,12 +278,12 @@
 .container-button {
     position: absolute;
     top: 45%;
-    left: 30%;
+    left: 35%;
 }
 
 .button {
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
     background-color: lightgray;
     border-radius: 10px;
