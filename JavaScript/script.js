@@ -23,8 +23,8 @@ document.addEventListener("keydown", function(event) {
             if (count === 4) {
                 clearInterval(interval)
             } else {
-                div.style.top = div.offsetTop - 38 + "px";
-                div.style.left = div.offsetLeft - 38 + "px";
+                div.style.top = div.offsetTop - 102 + "px";
+                div.style.left = div.offsetLeft - 185 + "px";
                 count++;
             }
         }
