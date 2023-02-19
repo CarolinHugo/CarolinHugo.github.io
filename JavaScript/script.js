@@ -33,21 +33,21 @@ document.addEventListener("keydown", function(event) {
 
 // move div in corner with touch
 document.addEventListener("touchstart", function(event) {
-    if (event.key === "Enter") {
+    // if (event.key === "Enter") {
         interval = setInterval(move_div, 40);
         function move_div() {
             if (count === 4) {
                 clearInterval(interval)
             } else {
-                div.style.top = div.offsetTop - 38 + "px";
-                div.style.left = div.offsetLeft - 38 + "px";
+                div.style.top = div.offsetTop - 102 + "px";
+                div.style.left = div.offsetLeft - 185 + "px";
                 count++;
             }
         }
-    }
+    // }
 });
 
-// disappear/appear
+// disappear/appear with enter
 document.querySelector(".about").style.display = "none";
 document.querySelector(".background").style.display = "none";
 document.querySelector(".drop").style.display = "none";
@@ -63,6 +63,11 @@ document.addEventListener("keydown", function(event) {
         document.querySelector(".social-media").style.display = "block";
     }
 });
+
+// disappear/appear with touch
+// document.addEventListener("touchstart", function(event) {
+//     if (event.)
+// });
 
 // change color
 document.addEventListener("keydown", function(event) {
