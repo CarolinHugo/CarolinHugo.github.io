@@ -33,7 +33,7 @@ document.addEventListener("keydown", function(event) {
 
 // move div in corner with touch
 document.addEventListener("touchstart", function(event) {
-    // if (event.key === "Enter") {
+    if (event.type === "touchstart") {
         interval = setInterval(move_div, 40);
         function move_div() {
             if (count === 4) {
@@ -44,7 +44,7 @@ document.addEventListener("touchstart", function(event) {
                 count++;
             }
         }
-    // }
+    }
 });
 
 // disappear/appear with enter
@@ -65,9 +65,14 @@ document.addEventListener("keydown", function(event) {
 });
 
 // disappear/appear with touch
-// document.addEventListener("touchstart", function(event) {
-//     if (event.)
-// });
+document.addEventListener("touchstart", function(event) {
+    document.getElementById("disappear").style.display = "none";
+    document.querySelector(".drop").style.display = "block";
+    document.querySelector(".background").style.display = "block";
+    document.querySelector(".about").style.display = "block";
+    document.querySelector(".download-button").style.display = "block";
+    document.querySelector(".social-media").style.display = "block";
+});
 
 // change color
 document.addEventListener("keydown", function(event) {
